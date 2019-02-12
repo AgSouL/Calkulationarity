@@ -41,11 +41,8 @@ namespace WindowsFormsApp1
             double c = Convert.ToDouble(textBox3.Text);
 
             double d = b * b - 4 * a * c;
-            if (d < 0)
-            {
-                textBox4.Text = "Дис-т < 0. Корней нет.";
-            }
-            else if (d == 0)
+            
+            if (d == 0)
             {
                 double x = (-b / (2 * a));
                 textBox4.Text = "Дис-т = 0. Корень = " + x + ".";
